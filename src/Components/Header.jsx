@@ -1,34 +1,66 @@
 import React from 'react'
-import { NavLink } from 'react-router-dom'
+import { Link, NavLink } from 'react-router-dom'
+import "../App.css"
 
 export default function Header() {
   return (
     <>
-      <div className="header-container pt-5">
-        <div className="container d-flex justify-content-between">
-
-          <div className="container-heading">
-            <p>Exclusive</p>
+      <nav className="navbar navbar-expand-lg bg-white border-bottom px-4 mt-3">
+        <div className="container-fluid d-flex flex-column flex-lg-row align-items-start align-items-lg-center">
+          <div className="d-flex w-100 w-md-50 justify-content-between align-items-center mb-2 mb-lg-0">
+            <Link className="navbar-brand text-nav" to="/">
+              Exclusive
+            </Link>
+            <button
+              className="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarNav"
+              aria-controls="navbarNav"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span className="navbar-toggler-icon"></span>
+            </button>
           </div>
-
-          <ul className="container-links d-flex">
-            <li className='mx-4'><NavLink to="/">Home</NavLink></li>
-            <li className='mx-4'><NavLink to="/contact">Contact</NavLink></li>
-            <li className='mx-4'><NavLink to="/about">About</NavLink></li>
-            <li className='mx-4'><NavLink to="/signup">Sign Up</NavLink></li>
-          </ul>
-
-          <div className="input-group pb-3" style={{ maxWidth: "270px"}}>
-            <input type="text" placeholder='What are you looking for?' className='form-control' style={{ borderRight: "none", backgroundColor: "#F5F5F5" }} />
-            <span className='input-group-text bg-white border-start-0' style={{ backgroundColor: "#F5F5F5" }}>
-              <span className="material-symbols-outlined">
-                search
-              </span>
-            </span>
+          <div className="collapse navbar-collapse w-100" id="navbarNav">
+            <div className="d-flex flex-column flex-lg-row w-100 justify-content-between align-items-start align-items-lg-center" style={{ maxWidth: "805px" }}>
+              <div className="d-flex flex-column flex-lg-row gap-4 mt-3 mt-lg-0">
+                <NavLink
+                  className="nav-item text-decoration-none nav-links"
+                  to="/"
+                >
+                  Home
+                </NavLink>
+                <NavLink
+                  className="nav-item text-decoration-none nav-links"
+                  to="/contact"
+                >
+                  Contact
+                </NavLink>
+                <NavLink
+                  className="nav-item text-decoration-none nav-links"
+                  to="/about"
+                >
+                  About
+                </NavLink>
+                <NavLink
+                  className="nav-item text-decoration-none nav-links"
+                  to="/signup"
+                >
+                  Sign Up
+                </NavLink>
+              </div>
+              <div className="mt-3 mt-lg-0">
+                <div className="input-search d-flex justify-content-center">
+                  <input type="text" placeholder='What are you looking for?' />
+                  <img src="/images/Vector.svg" alt="" />
+                </div>
+              </div>
+            </div>
           </div>
-
         </div>
-      </div>
+      </nav>
     </>
   )
 }
