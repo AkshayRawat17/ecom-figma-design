@@ -307,9 +307,6 @@
 
 /* About Component CSS */
 
-/* .about-container {
-  padding: 60px 0 60px 110px;
-} */
 
 .about-container .row nav .breadcrumb .breadcrumb-item {
   font-size: 14px;
@@ -379,9 +376,6 @@
   .story-section {
     padding: 0 20px 40px;
   }
-  .box-section {
-    /* padding: 20px; */
-  }
 }
 
 @media only screen and (max-width: 600px) {
@@ -390,45 +384,21 @@
   }
 }
 
-.swiper {
-  /* width: 100%; */
-  /* height: 80%; */
-}
-
 .swiper-slide {
   text-align: center;
   font-size: 18px;
-  /* background: #444; */
-
-  /* Center slide text vertically */
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-/* .swiper-slide img {
-  display: block;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-} */
-
 .image-slider-swipper {
   padding: 10px 110px;
 }
 
-/* .swiper-pagination {
-  position:  relative !important;
-  margin-top: 15px;
-} */
-
 .card-body {
   text-align: start;
 }
-
-/* .images {
-  margin-bottom: 32px;
-} */
 
 .card {
   margin-bottom: 20px;
