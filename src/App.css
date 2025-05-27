@@ -307,7 +307,6 @@
 
 /* About Component CSS */
 
-
 .about-container .row nav .breadcrumb .breadcrumb-item {
   font-size: 14px;
   font-weight: 400;
@@ -425,4 +424,99 @@
   .about-main {
     padding: 20px 40px !important;
   }
+}
+
+/* Home Page Component CSS */
+
+.home-container .row .col-3 .mb-2 .home-para {
+  font-family: "Poppins";
+  font-weight: 400;
+}
+
+.home-container .row .col-3 .mb-2 {
+  /* position: relative;
+  bottom: 7px;
+  left: 70px; */
+  max-width: 250px;
+}
+
+.home-container .row .col-3 {
+  padding: 35px 20px 35px 110px;
+}
+
+/* Today's Component CSS */
+
+.today-container .container .box {
+  width: 20px;
+  height: 40px;
+  border-radius: 4px;
+  background-color: #db4444;
+}
+
+.today-container .container p {
+  font-family: "Poppins";
+  font-weight: 600;
+  color: #db4444;
+}
+
+.today-container .container .row .col-lg-3 .card img {
+  height: 182px;
+  width: 100%;
+  /* text-align: center; */
+}
+
+.today-container .container .row .col-lg-3 .card .heart,
+.today-container .container .row .col-lg-3 .card .eye {
+  height: 34px;
+  width: 34px;
+}
+
+.today-container .container .row .col-lg-3 .card .heart {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
+.today-container .container .row .col-lg-3 .card .eye {
+  position: absolute;
+  right: 10px;
+  top: 60px;
+}
+
+.today-container .container .row .col-lg-3 .card .images-container .text-container {
+  padding: 4px 12px;
+  background-color: #db4444;
+  max-width: 28%;
+  border-radius: 4px;
+  position: absolute;
+  top: 5px;
+  left: 8px;
+  color: #FAFAFA;
+  font-size: 12px;
+  font-family: "Poppins";
+  font-weight: 400;
+}
+
+.today-container .container .row .col-12 .card .images-container .card-img-top {
+  padding: 40px 40px 25px 10px;
+  background-color: #F5F5F5;
+  border-radius: 4px;
+}
+
+.today-container .container .row .col-12 .card .card-body .card-title {
+  font-family: "Poppins";
+  font-weight: 500;
+  color: #000000;
+}
+
+.today-container .container .row .col-12 .card .card-body .paragraph .me-3 {
+  font-family: "Poppins";
+  font-weight: 500;
+  color: #DB4444;
+}
+
+.today-container .container .row .col-12 .card .card-body .paragraph .para {
+  color: #000000;
+  opacity: 50%;
+  text-decoration: line-through;
+  font-weight: 500;
 }

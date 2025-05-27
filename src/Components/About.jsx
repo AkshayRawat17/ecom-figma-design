@@ -109,7 +109,6 @@ export default function About() {
                     }}
                     modules={[Pagination]}
                     className="mySwiper row d-flex justify-content-evenly image-slider-swipper"
-
                 >
                     <SwiperSlide className='d-flex justify-content-around mb-5'>
 
