@@ -46,7 +46,7 @@ export default function Contact() {
                     <div className="col-12 col-lg-9 col-sm-12">
                         <form className="row mb-3 d-flex justify-content-around">
                             <div className="col-12 mb-3 col-sm-12 col-lg-3">
-                                <input type="text" name="name" placeholder='Your Name *' className='input-contact' required />
+                                <input type="text" name="name" placeholder='Your Name *' className='input-contact' />
                             </div>
                             <div className="col-12 mb-3 col-sm-12 col-lg-3">
                                 <input type="email" name="email" placeholder='Your Email *' className='input-contact' required />

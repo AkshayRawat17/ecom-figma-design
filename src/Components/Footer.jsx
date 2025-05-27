@@ -109,8 +109,8 @@ export default function Footer() {
         </div>
       </div>
       <div className="container-fluid d-flex justify-content-center align-items-center" style={{ backgroundColor: "black", color: "#FFFFFF", padding: "12px 3px" }}>
-        <img src="/images/icon-copyright.svg" alt="" />
-        <p className='mb-0 ms-1'>Copyright Rimel 2022. All right reserved</p>
+        <img src="/images/icon-copyright.svg" className='copyright-section' alt="" />
+        <p className='mb-0 ms-1 copyright-section'>Copyright Rimel 2022. All right reserved</p>
       </div>
     </>
   )
