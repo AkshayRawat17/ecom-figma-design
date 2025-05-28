@@ -5,7 +5,7 @@
 
 /* Banner Component CSS */
 
-.container-fluid .row .col-lg-9 p {
+.banner-container .row .col-lg-9 p {
   font-size: 14px;
   font-family: "Poppins";
   font-weight: 400;
@@ -15,7 +15,7 @@
   max-width: 1012px;
 }
 
-.container-fluid .row .col-lg-9 p span {
+.banner-container .row .col-lg-9 p span {
   font-family: "Poppins";
   font-weight: 600;
   font-size: 14px;
@@ -23,17 +23,26 @@
   color: #fafafa;
 }
 
-.container-fluid .row .col-6 p {
+.banner-container .row .col-6 p {
   font-size: 14px;
   font-family: "Poppins";
   font-weight: 400;
   color: #fafafa;
 }
 
-.container-fluid .row .image-container img {
+.banner-container .row .image-container img {
   position: relative;
   bottom: 3px;
   max-height: 28px;
+}
+
+.banner-container .row .col-lg-3 #language {
+  background-color: black;
+  color: white;
+  border: none;
+  outline: none;
+  position: relative;
+  bottom: 5px;
 }
 
 @media only screen and (max-width: 479px) {
@@ -297,6 +306,13 @@
   .container-fluid .row .col-lg-9 .px-4 .col-12 {
     padding: 0 !important;
   }
+  .message-btn {
+    width: 100%;
+    float: none !important;
+  }
+  .contact-container {
+    padding: 40px 130px 130px 110px !important;
+  }
 }
 
 @media only screen and (max-width: 479px) {
@@ -354,16 +370,17 @@
   font-weight: 400;
 }
 
-.story-section {
+.about-container .row .story-section {
   padding: 40px 110px;
 }
 
-.box-section {
+.about-container .box-section {
   display: flex;
   justify-content: center;
   gap: 10px;
 }
-.box-section .col-3:hover {
+
+.about-container .box-section .col-3:hover {
   background-color: #db4444;
   color: #f5f5f5;
 }
@@ -391,30 +408,30 @@
   align-items: center;
 }
 
-.image-slider-swipper {
+/* .about-container .image-slider-swipper {
   padding: 10px 110px;
-}
+} */
 
-.card-body {
+.about-container .image-slider-swipper .mb-5 .row .card .card-body {
   text-align: start;
 }
 
-.card {
+.about-container .image-slider-swipper .mb-5 .row .card {
   margin-bottom: 20px;
 }
 
-.about-page-content {
+.about-container .about-main .about-page-content {
   padding: 45px;
   text-align: center;
 }
 
-.about-content-para {
+.about-container .about-main .about-page-content .mb-3 .about-content-para {
   font-family: "Poppins";
   font-size: 20px;
   font-weight: 600;
 }
 
-.about-last {
+.about-container .about-main .about-page-content .mb-3 .about-last {
   font-family: "Poppins";
   font-size: 14px;
   font-weight: 400;
@@ -442,6 +459,33 @@
 
 .home-container .row .col-3 {
   padding: 35px 20px 35px 110px;
+}
+
+.home-main {
+  --bs-gutter-x: 0;
+}
+
+.home-main .about-page-content {
+  padding: 45px;
+  text-align: center;
+}
+
+.home-main .about-page-content .mb-3 .about-content-para {
+  font-family: "Poppins";
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.home-main .about-page-content .mb-3 .about-last {
+  font-family: "Poppins";
+  font-size: 14px;
+  font-weight: 400;
+}
+
+@media only screen and (max-width: 992px) {
+  .about-main {
+    padding: 20px 40px !important;
+  }
 }
 
 /* Today's Component CSS */
@@ -482,7 +526,13 @@
   top: 60px;
 }
 
-.today-container .container .row .col-lg-3 .card .images-container .text-container {
+.today-container
+  .container
+  .row
+  .col-lg-3
+  .card
+  .images-container
+  .text-container {
   padding: 4px 12px;
   background-color: #db4444;
   max-width: 28%;
@@ -490,7 +540,7 @@
   position: absolute;
   top: 5px;
   left: 8px;
-  color: #FAFAFA;
+  color: #fafafa;
   font-size: 12px;
   font-family: "Poppins";
   font-weight: 400;
@@ -498,7 +548,7 @@
 
 .today-container .container .row .col-12 .card .images-container .card-img-top {
   padding: 40px 40px 25px 10px;
-  background-color: #F5F5F5;
+  background-color: #f5f5f5;
   border-radius: 4px;
 }
 
@@ -508,10 +558,10 @@
   color: #000000;
 }
 
-.today-container .container .row .col-12 .card .card-body .paragraph .me-3 {
+.today-container .container .row .col-12 .card .card-body .paragraph .me-2 {
   font-family: "Poppins";
   font-weight: 500;
-  color: #DB4444;
+  color: #db4444;
 }
 
 .today-container .container .row .col-12 .card .card-body .paragraph .para {
@@ -519,4 +569,654 @@
   opacity: 50%;
   text-decoration: line-through;
   font-weight: 500;
+}
+
+.today-container .container .row .col-12 .card .card-body .paragraph .me-2 {
+  margin-bottom: 5px;
+}
+
+.today-container .container .row .col-12 .card .card-body .star-container {
+  max-width: 60%;
+  /* background-color: red; */
+  /* max-height: 20px; */
+}
+
+.today-container
+  .container
+  .row
+  .col-12
+  .card
+  .card-body
+  .star-container
+  .star-images {
+  /* height: 5px; */
+  max-width: 60%;
+  /* padding-right: 10px; */
+  /* background-color: black; */
+}
+
+.today-container
+  .container
+  .row
+  .col-12
+  .card
+  .card-body
+  .star-container
+  .star-images
+  img {
+  height: 20px;
+  max-width: 20%;
+}
+
+.today-container
+  .container
+  .row
+  .col-12
+  .card
+  .card-body
+  .star-container
+  .image-para {
+  font-family: "Poppins";
+  font-weight: 600;
+  font-size: 14px;
+  color: #000000;
+  opacity: 50%;
+}
+
+.today-container .container .row .btn-product {
+  max-width: 300px;
+  background-color: #db4444;
+  text-align: center;
+  color: #fafafa;
+  padding: 1rem 3rem;
+  border-radius: 4px;
+  font-family: "Poppins";
+  font-weight: 500;
+}
+
+@media only screen and (max-width: 350px) {
+  .today-container .container .row .btn-product {
+    padding: 1rem 2rem;
+  }
+}
+
+/* Category Component CSS */
+
+.category-container .container .box {
+  width: 20px;
+  height: 40px;
+  border-radius: 4px;
+  background-color: #db4444;
+}
+
+.category-container .container p {
+  font-family: "Poppins";
+  font-weight: 600;
+  color: #db4444;
+  position: relative;
+  top: 7px;
+}
+
+.category-container .container .mb-3 .browse {
+  font-weight: 600;
+  font-family: "Inter";
+  font-size: 36px;
+  color: #000000;
+}
+
+.category-container .container .row .col-2 .phones p {
+  font-weight: 400;
+  font-family: "Poppins";
+  color: #000000;
+}
+
+.category-container .container .row .col-2 {
+  height: 180px;
+  width: 200px;
+}
+
+.category-container .container .row .col-2:hover {
+  background-color: #db4444;
+}
+
+@media only screen and (max-width: 480px) {
+  .category-container .container {
+    padding: 20px 60px !important;
+  }
+}
+
+/* Month Component CSS */
+
+.month-container .container .box {
+  width: 20px;
+  height: 40px;
+  border-radius: 4px;
+  background-color: #db4444;
+}
+
+.month-container .container p {
+  font-family: "Poppins";
+  font-weight: 600;
+  color: #db4444;
+  position: relative;
+  top: 7px;
+}
+
+.month-container .container .row .selling .sell {
+  font-weight: 600;
+  font-family: "Inter";
+  font-size: 36px;
+  color: #000000;
+}
+
+.month-container .container .box {
+  width: 20px;
+  height: 40px;
+  border-radius: 4px;
+  background-color: #db4444;
+}
+
+.month-container .container p {
+  font-family: "Poppins";
+  font-weight: 600;
+  color: #db4444;
+}
+
+.month-container .container .row .col-lg-3 .card img {
+  height: 182px;
+  width: 100%;
+  /* text-align: center; */
+}
+
+.month-container .container .row .col-lg-3 .card .heart,
+.month-container .container .row .col-lg-3 .card .eye {
+  height: 34px;
+  width: 34px;
+}
+
+.month-container .container .row .col-lg-3 .card .heart {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
+.month-container .container .row .col-lg-3 .card .eye {
+  position: absolute;
+  right: 10px;
+  top: 60px;
+}
+
+.month-container
+  .container
+  .row
+  .col-lg-3
+  .card
+  .images-container
+  .text-container {
+  padding: 4px 12px;
+  background-color: #db4444;
+  max-width: 28%;
+  border-radius: 4px;
+  position: absolute;
+  top: 5px;
+  left: 8px;
+  color: #fafafa;
+  font-size: 12px;
+  font-family: "Poppins";
+  font-weight: 400;
+}
+
+.month-container .container .row .col-12 .card .images-container .card-img-top {
+  padding: 40px 40px 25px 10px;
+  background-color: #f5f5f5;
+  border-radius: 4px;
+}
+
+.month-container .container .row .col-12 .card .card-body .card-title {
+  font-family: "Poppins";
+  font-weight: 500;
+  color: #000000;
+}
+
+.month-container .container .row .col-12 .card .card-body .paragraph .me-2 {
+  font-family: "Poppins";
+  font-weight: 500;
+  color: #db4444;
+}
+
+.month-container .container .row .col-12 .card .card-body .paragraph .para {
+  color: #000000;
+  opacity: 50%;
+  text-decoration: line-through;
+  font-weight: 500;
+}
+
+.month-container .container .row .col-12 .card .card-body .paragraph .me-3 {
+  margin-bottom: 5px;
+}
+
+.month-container .container .row .col-12 .card .card-body .star-container {
+  max-width: 60%;
+  /* background-color: red; */
+  /* max-height: 20px; */
+}
+
+.month-container
+  .container
+  .row
+  .col-12
+  .card
+  .card-body
+  .star-container
+  .star-images {
+  /* height: 5px; */
+  max-width: 60%;
+  /* padding-right: 10px; */
+  /* background-color: black; */
+}
+
+.month-container
+  .container
+  .row
+  .col-12
+  .card
+  .card-body
+  .star-container
+  .star-images
+  img {
+  height: 20px;
+  max-width: 20%;
+}
+
+.month-container
+  .container
+  .row
+  .col-12
+  .card
+  .card-body
+  .star-container
+  .image-para {
+  font-family: "Poppins";
+  font-weight: 600;
+  font-size: 14px;
+  color: #000000;
+  opacity: 50%;
+  position: relative;
+  top: 2px;
+}
+
+.month-container .container .row .button .border {
+  background-color: #db4444;
+  color: #fafafa;
+  font-family: "Poppins";
+  border-radius: 4px;
+  padding: 16px 48px;
+  height: 56px;
+}
+
+.month-container .frame-container {
+  background-color: #000000;
+}
+
+.month-container .frame-container .row .col-6 .mb-3 .category {
+  font-weight: 600;
+  color: #00ff66;
+  font-family: "Poppins";
+}
+
+.month-container .frame-container .row .col-6 .mb-3 .experience {
+  font-family: "Inter";
+  font-weight: 600;
+  font-size: 48px;
+  color: #fafafa;
+}
+
+.month-container .frame-container .row .col-6 .mb-3 .buy-btn {
+  background-color: #00ff66;
+  color: #fafafa;
+  padding: 16px 48px;
+  border-radius: 4px;
+  border: none;
+  font-weight: 500;
+  font-family: "Poppins";
+}
+
+/* .left {
+  width: 100%;
+} */
+
+@media only screen and (max-width: 767px) {
+  .month-container .container .row .button .border {
+    width: 100% !important;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .boombox {
+    display: none;
+  }
+  .left {
+    width: 100%;
+  }
+  .frame-1 {
+    width: 100%;
+  }
+}
+
+/* Products Component CSS */
+
+.product-container .container .box {
+  width: 20px;
+  height: 40px;
+  border-radius: 4px;
+  background-color: #db4444;
+}
+
+.product-container .container p {
+  font-family: "Poppins";
+  font-weight: 600;
+  color: #db4444;
+  position: relative;
+  top: 7px;
+}
+
+.product-container .container .mb-3 .browse {
+  font-weight: 600;
+  font-family: "Inter";
+  font-size: 36px;
+  color: #000000;
+}
+
+.product-container .container .row .col-lg-3 .card img {
+  height: 182px;
+  width: 100%;
+  /* text-align: center; */
+}
+
+.product-container .container .row .col-lg-3 .card .heart,
+.product-container .container .row .col-lg-3 .card .eye {
+  height: 34px;
+  width: 34px;
+}
+
+.product-container .container .row .col-lg-3 .card .heart {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
+.product-container .container .row .col-lg-3 .card .eye {
+  position: absolute;
+  right: 10px;
+  top: 60px;
+}
+
+.product-container
+  .container
+  .row
+  .col-lg-3
+  .card
+  .images-container
+  .text-container {
+  padding: 4px 12px;
+  background-color: #db4444;
+  max-width: 28%;
+  border-radius: 4px;
+  position: absolute;
+  top: 5px;
+  left: 8px;
+  color: #fafafa;
+  font-size: 12px;
+  font-family: "Poppins";
+  font-weight: 400;
+}
+
+.product-container
+  .container
+  .row
+  .col-12
+  .card
+  .images-container
+  .card-img-top {
+  padding: 40px 40px 25px 10px;
+  background-color: #f5f5f5;
+  border-radius: 4px;
+}
+.product-container .container .row .col-12 .card .card-body {
+  height: 150px;
+}
+
+.product-container .container .row .col-12 .card .card-body .card-title {
+  font-family: "Poppins";
+  font-weight: 500;
+  color: #000000;
+  /* width: 185px; */
+}
+
+.product-container .container .row .col-12 .card .card-body .paragraph .me-2 {
+  font-family: "Poppins";
+  font-weight: 500;
+  color: #db4444;
+}
+
+.product-container .container .row .col-12 .card .card-body .paragraph .para {
+  color: #000000;
+  opacity: 50%;
+  text-decoration: line-through;
+  font-weight: 500;
+}
+
+.product-container .container .row .col-12 .card .card-body .paragraph .me-2 {
+  margin-bottom: 5px;
+}
+
+.product-container .container .row .col-12 .card .card-body .star-container {
+  max-width: 60%;
+  /* background-color: red; */
+  /* max-height: 20px; */
+}
+
+.product-container
+  .container
+  .row
+  .col-12
+  .card
+  .card-body
+  .star-container
+  .star-images {
+  /* height: 5px; */
+  max-width: 60%;
+  /* padding-right: 10px; */
+  /* background-color: black; */
+}
+
+.product-container
+  .container
+  .row
+  .col-12
+  .card
+  .card-body
+  .star-container
+  .star-images
+  img {
+  height: 20px;
+  max-width: 20%;
+}
+
+.product-container
+  .container
+  .row
+  .col-12
+  .card
+  .card-body
+  .star-container
+  .image-para {
+  font-family: "Poppins";
+  font-weight: 600;
+  font-size: 14px;
+  color: #000000;
+  opacity: 50%;
+  position: relative;
+  top: 2px;
+}
+
+.new {
+  background-color: #00ff66 !important;
+}
+
+.colour-change img {
+  height: 26px !important;
+  width: 40px !important;
+}
+
+.colour-change {
+  position: relative;
+  bottom: 10px;
+}
+
+.product-container .row .btn-product {
+  max-width: 300px;
+  background-color: #db4444;
+  text-align: center;
+  color: #fafafa;
+  padding: 1rem 3rem;
+  border-radius: 4px;
+  font-family: "Poppins";
+  font-weight: 500;
+}
+
+@media only screen and (max-width: 350px) {
+  .product-container .row .btn-product {
+    padding: 1rem 2rem;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .category-buttons {
+    display: none !important;
+  }
+}
+
+/* Featured Component CSS */
+
+.featured-container .container .box {
+  width: 20px;
+  height: 40px;
+  border-radius: 4px;
+  background-color: #db4444;
+}
+
+.featured-container .container p {
+  font-family: "Poppins";
+  font-weight: 600;
+  color: #db4444;
+}
+
+.featured-container .container .mb-3 .new-arrival {
+  font-weight: 600;
+  font-family: "Inter";
+  font-size: 36px;
+  color: #000000;
+}
+
+.img-arrival {
+  padding-left: 70px;
+  width: 100%;
+  height: 100%;
+}
+
+.contents {
+  position: absolute;
+  bottom: 15px;
+  width: 65%;
+  left: 31px;
+}
+
+.playstation {
+  font-weight: 600;
+  font-size: 24px;
+  font-family: "Inter";
+  color: #fafafa !important;
+}
+
+.ps5 {
+  font-size: 14px;
+  font-weight: 400 !important;
+  font-family: "Poppins";
+  color: #fafafa !important;
+}
+
+.shopnow {
+  font-family: "Poppins";
+  font-weight: 500 !important;
+  color: #ffffff !important;
+  border: none;
+  background: none;
+}
+
+.upper-container {
+  background-color: #0d0d0d;
+}
+
+/* .arrival-2-contents {
+  height: 200px;
+  width: 300px;
+  padding-top: 85px;
+  padding-left: 20px;
+}
+
+.women {
+  font-size: 24px !important;
+  font-family: "Inter" !important;
+  font-weight: 600 !important;
+  color: #fafafa !important;
+}
+
+.featured-women-text {
+  font-size: 14px !important;
+  font-weight: 400 !important;
+  font-family: "Poppins" !important;
+  color: #FAFAFA !important;
+}
+
+.upper {
+  background-color: #0D0D0D;
+  border-radius: 4px;
+}
+
+.arrival-2 img {
+  height: 268px;
+  width: 100%;
+} */
+
+.upper {
+  height: 50%;
+  width: 100%;
+  background-color: red;
+}
+
+.arrival-contents {
+  max-width: 40%;
+  height: 100%;
+  padding: 25px;
+}
+
+.image-arrival {
+  width: 100%;
+}
+
+.women {
+  font-family: "Inter" !important;
+  font-weight: 600 !important;
+  font-size: 24px !important;
+  color: #fafafa !important;
+}
+
+.featured-women {
+  font-family: "Poppins" !important;
+  font-weight: 400 !important;
+  font-size: 14px !important;
+  color: #fafafa !important;
+}
+
+.arrival-2-contents {
+  padding: 25px;
 }

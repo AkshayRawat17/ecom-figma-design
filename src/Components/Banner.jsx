@@ -11,8 +11,10 @@ export default function Banner() {
                             <span className='ps-2'>ShopNow</span></p>
                     </div>
                     <div className="col-lg-3 image-container d-flex justify-content-center col-sm-6 col-6" style={{ maxWidth: "352px" }}>
-                        <p className='text-center'>English</p>
-                        <img src="/images/DropDown.svg" alt="" />
+                        <select name="language" id="language">
+                            <option value="English">English</option>
+                            <option value="Hindi">Hindi</option>
+                        </select>
                     </div>
                 </div>
             </div>

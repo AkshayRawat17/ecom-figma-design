@@ -60,9 +60,9 @@ export default function Contact() {
                                 <textarea name="message" id="" rows={9} placeholder='Your Message' className='w-100' ></textarea>
                             </div>
                         </div>
-                        <div className="row float-end">
+                        <div className="row">
                             <div className="col-12">
-                                <button type='submit' className='message-btn'>Send Message</button>
+                                <button type='submit' className='message-btn float-end'>Send Message</button>
                             </div>
                         </div>
                     </div>

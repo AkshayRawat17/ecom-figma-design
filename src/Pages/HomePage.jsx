@@ -9,6 +9,10 @@ import 'swiper/css';
 import 'swiper/css/pagination';
 
 import '../SwipperStyle.css';
+import Categories from '../Components/Categories';
+import Month from '../Components/Month';
+import Product from '../Components/Products';
+import Featured from '../Components/Featured';
 
 
 export default function HomePage() {
@@ -54,16 +58,16 @@ export default function HomePage() {
                 <p className='text-dark'>Slide 1</p>
               </SwiperSlide>
               <SwiperSlide>
-                 <img src="/images/image-home-2.jpg" className='position-absolute' alt="" />
+                <img src="/images/image-home-2.jpg" className='position-absolute' alt="" />
               </SwiperSlide>
               <SwiperSlide>
-                 <img src="/images/image-home-2.jpg" className='position-absolute' alt="" />
+                <img src="/images/image-home-2.jpg" className='position-absolute' alt="" />
               </SwiperSlide>
               <SwiperSlide>
-                 <img src="/images/image-home-2.jpg" className='position-absolute' alt="" />
+                <img src="/images/image-home-2.jpg" className='position-absolute' alt="" />
               </SwiperSlide>
               <SwiperSlide>
-                 <img src="/images/image-home-2.jpg" className='position-absolute' alt="" />
+                <img src="/images/image-home-2.jpg" className='position-absolute' alt="" />
               </SwiperSlide>
             </Swiper>
           </div>
@@ -71,6 +75,47 @@ export default function HomePage() {
       </div>
 
       <Todays />
+      <Categories />
+      <Month />
+      <Product />
+      <Featured />
+
+      <div className="row home-main about-main" style={{ padding: "30px 80px" }}>
+        <div className="col-12 col-sm-6 col-lg-4 col-md-4 about-page-content">
+          <div className="mb-3">
+            <img src="/images/Services (6).svg" alt="" />
+          </div>
+          <div className="mb-3">
+            <p className='about-content-para'>FREE AND FAST DELIVERY</p>
+          </div>
+          <div className="mb-3">
+            <p className='about-last'>Free delivery for all orders over $140</p>
+          </div>
+        </div>
+        <div className="col-12 col-sm-6 col-lg-4 col-md-4 about-page-content">
+          <div className="mb-3">
+            <img src="/images/Services (7).svg" alt="" />
+          </div>
+          <div className="mb-3">
+            <p className='about-content-para'>24/7 CUSTOMER SERVICE</p>
+          </div>
+          <div className="mb-3">
+            <p className='about-last'>Friendly 24/7 customer support</p>
+          </div>
+        </div>
+        <div className="col-12 col-sm-6 col-lg-4 col-md-4 about-page-content">
+          <div className="mb-3">
+            <img src="/images/Services (8).svg" alt="" />
+          </div>
+          <div className="mb-3">
+            <p className='about-content-para'>MONEY BACK GUARANTEE</p>
+          </div>
+          <div className="mb-3">
+            <p className='about-last'>We return money within 30 days</p>
+          </div>
+        </div>
+      </div>
+
     </>
   )
 }
