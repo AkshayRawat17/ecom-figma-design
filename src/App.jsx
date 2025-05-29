@@ -8,6 +8,7 @@ import Footer from './Components/Footer'
 import LoginPage from './Pages/LoginPage'
 import ContactPage from './Pages/ContactPage'
 import AboutPage from './Pages/AboutPage'
+import CheckoutPage from './Pages/CheckoutPage'
 
 export default function App() {
   return (
@@ -21,6 +22,7 @@ export default function App() {
           <Route path='/login' element={<LoginPage />} />
           <Route path='/contact' element={<ContactPage />} />
           <Route path='/about' element={<AboutPage />} />
+          <Route path='/checkout' element={<CheckoutPage />} />
         </Routes>
         <Footer />
       </BrowserRouter>
