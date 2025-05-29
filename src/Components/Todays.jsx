@@ -10,12 +10,26 @@ export default function Todays() {
                     <p>Today's</p>
                 </div>
 
-                {/* <div className="container bg-dark">
-                    <div className="col-6">
-                        <p>Flash Sales</p>
-
+                <div className="container">
+                    <div className="row">
+                        <div className="col-6 col-sm-12 col-lg-6">
+                            <div className="mb-3 d-flex justify-content-between">
+                                <p className='flash-sales'>Flash Sales</p>
+                                <img src="/images/timer.svg" alt="" className='img-flash' />
+                            </div>
+                        </div>
+                        <div className="col-6 col-sm-12 col-lg-6 ">
+                            <div className="category-buttons float-end">
+                                <button className="btn-left border border-0" style={{ borderRadius: "50%", height: "50px", width: "50px", backgroundColor: "#F5F5F5" }}>
+                                    <img src="/images/arrow-left.svg" alt="" />
+                                </button>
+                                <button className="ms-3 btn-right border border-0" style={{ borderRadius: "50%", height: "50px", width: "50px", backgroundColor: "#F5F5F5" }}>
+                                    <img src="/images/arrow-right.svg" alt="" />
+                                </button>
+                            </div>
+                        </div>
                     </div>
-                </div> */}
+                </div>
 
                 <div className="container">
 

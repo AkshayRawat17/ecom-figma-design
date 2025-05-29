@@ -145,7 +145,7 @@ export default function Month() {
 
             <div className="container frame-container p-5">
                 <div className="row">
-                    <div className="col-6 left">
+                    <div className="col-lg-6 left">
                         <div className="mb-3">
                             <p className='category'>Categories</p>
                         </div>
@@ -159,7 +159,7 @@ export default function Month() {
                             <button className='buy-btn'>Buy Now!</button>
                         </div>
                     </div>
-                    <div className="col-6">
+                    <div className="col-lg-6">
                         <img src="/images/boombox.svg" alt="" className='h-100 w-100 boombox' />
                     </div>
                 </div>

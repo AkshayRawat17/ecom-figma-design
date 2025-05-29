@@ -445,9 +445,13 @@
 
 /* Home Page Component CSS */
 
-.home-container .row .col-3 .mb-2 .home-para {
+.home-para {
   font-family: "Poppins";
   font-weight: 400;
+}
+
+.slider-container {
+  background-color: #000000;
 }
 
 .home-container .row .col-3 .mb-2 {
@@ -461,8 +465,44 @@
   padding: 35px 20px 35px 110px;
 }
 
+.women-fashion {
+  max-height: 34px;
+}
+
+.apple-logo {
+  font-family: "Poppins";
+  font-weight: 400;
+  color: #ffffff;
+}
+
+.voucher {
+  font-size: 3rem;
+  font-family: "Inter";
+  font-weight: 600;
+  color: #fafafa;
+}
+
+.arrow-right {
+  color: #fafafa !important;
+}
+
+.home-image-1 {
+  position: absolute;
+  bottom: 12px;
+  right: 10px;
+}
+
 .home-main {
   --bs-gutter-x: 0;
+}
+
+.material-symbols-outlined {
+  color: black;
+  border: 2px solid gray;
+  font-size: 2rem;
+  border-radius: 7px;
+  padding: 5px;
+  opacity: 50%;
 }
 
 .home-main .about-page-content {
@@ -482,9 +522,72 @@
   font-weight: 400;
 }
 
+.offcanvas-home-container {
+  display: none;
+}
+
+.material-symbols-outlined{
+  display: none;
+}
+
+.swiper-pagination-bullet {
+  background-color: #db4444;
+  opacity: 1;
+}
+
+.offcanvas-home-container {
+  display: none;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #db4444 !important;
+}
+
 @media only screen and (max-width: 992px) {
   .about-main {
     padding: 20px 40px !important;
+  }
+  .offcanvas-home-container {
+    display: block;
+  }
+  .sidebar {
+    display: none;
+  }
+  .sidebar-btn {
+    /* width: 100%; */
+    color: red !important;
+  }
+  .second-container {
+    padding: 0;
+  }
+  .material-symbols-outlined {
+    display: block;
+    width: 50px;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .apple-container {
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+}
+
+@media only screen and (max-width: 479px) {
+  /* .swipper-apple-image  {
+    width: 100%;
+    } */
+  .apple-container {
+    padding-left: 95px !important;
+  }
+  /* .home-image-container img {
+    display: none;
+  } */
+}
+
+@media only screen and (max-width: 320px) {
+  .apple-container {
+    padding-left: 30px !important;
   }
 }
 
@@ -544,6 +647,13 @@
   font-size: 12px;
   font-family: "Poppins";
   font-weight: 400;
+}
+
+.flash-sales {
+  font-size: 36px;
+  font-weight: 600;
+  font-family: "Inter";
+  color: #000000 !important;
 }
 
 .today-container .container .row .col-12 .card .images-container .card-img-top {
@@ -640,6 +750,18 @@
   }
 }
 
+@media only screen and (max-width: 992px) {
+  .today-container .container .col-lg-6 .category-buttons {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .img-flash {
+    display: none;
+  }
+}
+
 /* Category Component CSS */
 
 .category-container .container .box {
@@ -683,7 +805,72 @@
   .category-container .container {
     padding: 20px 60px !important;
   }
+  .frame-container {
+    padding: 1rem !important;
+  }
 }
+
+
+.button-menu{
+  background-color: #fff;
+  color: #000;
+  border-radius: 4px;
+  border: 1px solid #000;
+  padding: 4px 8px 4px 8px;
+}
+.large-div {
+  min-height: 400px;
+}
+.side-banner{
+  background-color: #000;
+  color: #fff;
+  min-height: 400px;
+  padding: 50px;
+  border-radius: 4px;
+}
+.main-banner {
+  flex-grow: 1;
+  padding: 35px;
+}
+.text-iphone {
+  font-size: 3rem;
+  color: #FFFFFF;
+  font-weight: 600;
+  font-family: "Inter";
+}
+
+.iphone-shop-button {
+  padding: 10px 20px;
+  background-color: black;
+  color: #fff;
+  font-weight: 500;
+  border: none;
+  font-family: "Poppins" !important;
+  border-radius: 5px;
+}
+@media (max-width: 768px) {
+  .text-iphone {
+    font-size: 1.5rem;
+  }
+  .iphone-shop-button {
+    font-size: 0.9rem;
+  }
+}
+.iphone-14 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+
+
+
+
+
+
+
+
+
 
 /* Month Component CSS */
 
@@ -855,22 +1042,23 @@
 
 .month-container .frame-container {
   background-color: #000000;
+  border-radius: 4px;
 }
 
-.month-container .frame-container .row .col-6 .mb-3 .category {
+.month-container .frame-container .row .col-lg-6 .mb-3 .category {
   font-weight: 600;
   color: #00ff66;
   font-family: "Poppins";
 }
 
-.month-container .frame-container .row .col-6 .mb-3 .experience {
+.month-container .frame-container .row .col-lg-6 .mb-3 .experience {
   font-family: "Inter";
   font-weight: 600;
   font-size: 48px;
   color: #fafafa;
 }
 
-.month-container .frame-container .row .col-6 .mb-3 .buy-btn {
+.month-container .frame-container .row .col-lg-6 .mb-3 .buy-btn {
   background-color: #00ff66;
   color: #fafafa;
   padding: 16px 48px;
@@ -891,14 +1079,18 @@
 }
 
 @media only screen and (max-width: 767px) {
-  .boombox {
+  /* .boombox {
     display: none;
-  }
+  } */
   .left {
     width: 100%;
+    margin-bottom: 25px;
   }
   .frame-1 {
     width: 100%;
+  }
+  .frame-container{
+    border-radius: 0 !important;
   }
 }
 
@@ -1150,6 +1342,7 @@
   color: #ffffff !important;
   border: none;
   background: none;
+  border-bottom: 1px solid white;
 }
 
 .upper-container {
@@ -1220,6 +1413,12 @@
   padding: 25px;
 }
 
+@media only screen and (max-width: 479px) {
+  .arrival-1-contents {
+    display: none;
+  }
+}
+
 /* Checkout Page CSS */
 
 .checkout-container .container nav .breadcrumb .breadcrumb-item a,
@@ -1287,8 +1486,6 @@ input[type="radio"] {
 .price-item {
   border-bottom: 1px solid black;
 }
-
-
 
 @media only screen and (max-width: 767px) {
   .checkout-container .right-container {

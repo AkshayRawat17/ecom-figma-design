@@ -24,38 +24,38 @@ export default function Categories() {
                 </div>
 
                 <div className="container mb-5">
-                    <div className="row d-flex justify-content-around">
-                        <div className="col-2 col-lg-3 col-md-4 mb-4 d-flex justify-content-center align-items-center border border-dark border-opacity-25 border border-dark border-opacity-25">
+                    <div className="row d-flex gap-5 justify-content-center">
+                        <div className="col-2 col-lg-4 col-md-4 mb-4 d-flex justify-content-center align-items-center border border-dark border-opacity-25 border border-dark border-opacity-25">
                             <div className="phones">
                                 <img src="/images/phone.svg" alt="" className="" />
                                 <p>Phones</p>
                             </div>
                         </div>
-                        <div className="col-2 col-lg-3 col-md-4 mb-4 d-flex justify-content-center align-items-center border border-dark border-opacity-25">
+                        <div className="col-2 col-lg-4 col-md-4 mb-4 d-flex justify-content-center align-items-center border border-dark border-opacity-25">
                             <div className="phones">
                                 <img src="/images/computer.svg" alt="" className="ps-3" />
                                 <p>Computers</p>
                             </div>
                         </div>
-                        <div className="col-2 col-lg-3 col-md-4 mb-4 d-flex justify-content-center align-items-center border border-dark border-opacity-25">
+                        <div className="col-2 col-lg-4 col-md-4 mb-4 d-flex justify-content-center align-items-center border border-dark border-opacity-25">
                             <div className="phones">
                                 <img src="/images/smartwatch.svg" alt="" className="ps-3" />
                                 <p>Smartwatch</p>
                             </div>
                         </div>
-                        <div className="col-2 col-lg-3 col-md-4 mb-4 d-flex justify-content-center align-items-center border border-dark border-opacity-25">
+                        <div className="col-2 col-lg-4 col-md-4 mb-4 d-flex justify-content-center align-items-center border border-dark border-opacity-25">
                             <div className="phones">
-                                <img src="/images/camera.svg" alt="" className="" />
+                                <img src="/images/camera.svg" alt="" className="text-dark" style={{fill: "black !important"}} />
                                 <p>Camera</p>
                             </div>
                         </div>
-                        <div className="col-2 col-lg-3 col-md-4 mb-4 d-flex justify-content-center align-items-center border border-dark border-opacity-25">
+                        <div className="col-2 col-lg-4 col-md-4 mb-4 d-flex justify-content-center align-items-center border border-dark border-opacity-25">
                             <div className="phones">
                                 <img src="/images/headphone.svg" alt="" className="ps-3" />
                                 <p>Headphones</p>
                             </div>
                         </div>
-                        <div className="col-2 col-lg-3 col-md-4 mb-4 d-flex justify-content-center align-items-center border border-dark border-opacity-25">
+                        <div className="col-2 col-lg-4 col-md-4 mb-4 d-flex justify-content-center align-items-center border border-dark border-opacity-25">
                             <div className="phones">
                                 <img src="/images/gamepad.svg" alt="" className="" />
                                 <p>Gaming</p>

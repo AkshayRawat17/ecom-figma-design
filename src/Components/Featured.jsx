@@ -3,7 +3,7 @@ import React from 'react'
 export default function Featured() {
     return (
         <>
-            <div className="container-fluid featured-container bg-success">
+            <div className="container-fluid featured-container">
 
                 <div className="container d-flex mb-4">
                     <div className="box me-3" ></div>
@@ -17,8 +17,8 @@ export default function Featured() {
                 </div>
 
                 <div className="container mb-5">
-                    <div className="row">
-                        <div className="col-6 bg-primary d-flex position-relative">
+                    <div className="row p-4">
+                        {/* <div className="col-6 bg-primary d-flex position-relative">
                             <div className="image-container">
                                 <img src="/images/arrival-1.svg" alt="" className='w-100 img-arrival' />
                             </div>
@@ -35,79 +35,76 @@ export default function Featured() {
                             </div>
                         </div>
 
-                        <div
-                            className="col-md-6 d-flex flex-column gap-3"
-                            style={{ height: "600px" }}
-                        >
-                            {/* Top - Full Width Card */}
-                            <div
-                                className="card text-white bg-dark border-0 rounded overflow-hidden w-100"
-                                style={{ height: "48%" }}
-                            >
-                                <img
-                                    src="/images/arrival-2.svg"
-                                    className="card-img"
-                                    alt="Women's Collections"
-                                    style={{ objectFit: "cover", height: "100%" }}
-                                />
-                                <div className="card-img-overlay d-flex flex-column justify-content-end p-3">
-                                    <h5 className="card-title">Women’s Collections</h5>
-                                    <p className="card-text">
-                                        Featured woman collections that <br />
-                                        give you another vibe.
-                                    </p>
-                                    <button
-                                        href="#"
-                                        className="btn btn-sm position-absolute bottom-0 start-0"
-                                    >
-                                        Shop Now
-                                    </button>
+                        <div className="col-6">
+
+                        </div> */}
+
+                        <div className="col-lg-6 mb-3 col-sm-12 position-relative d-flex" style={{background: "#000000"}}> 
+                            <img src="/images/arrival-1.svg" alt="" className='h-100 w-100' />
+                            <div className="arrival-1-contents position-absolute bottom-0">
+                                <div className="mb-3">
+                                    <p className='playstation'>PlayStation 5</p>
+                                </div>
+                                <div className="mb-3">
+                                    <p className='ps5'>Black and White version of the PS5 coming out on sale.</p>
+                                </div>
+                                <div className="mb-3">
+                                    <button className='shopnow'>ShopNow</button>
                                 </div>
                             </div>
-                            {/* Bottom Row - Two Half-Width Cards */}
-                            <div
-                                className="d-flex gap-3"
-                                style={{ height: "48%", marginTop: "20px" }}
-                            >
-                                {/* Speaker Card */}
-                                <div className="card text-white bg-dark border-0 rounded overflow-hidden w-50">
-                                    <img
-                                        src="images/arrival-3.svg"
-                                        className="card-img"
-                                        alt="Speakers"
-                                        style={{ objectFit: "cover", height: "100%" }}
-                                    />
-                                    <div className="card-img-overlay d-flex flex-column justify-content-end p-3">
-                                        <h6 className="card-title">Speakers</h6>
-                                        <p className="card-text small">Amazon wireless speakers</p>
-                                        <button
-                                            href="#"
-                                            className="btn btn-sm position-absolute bottom-0 start-0"
-                                        >
-                                            Shop Now
-                                        </button>
+                        </div>
+
+                        <div className="col-lg-6 col-sm-12 second-container">
+
+                            <div className="upper mb-3 d-flex position-relative" style={{ height: "47%", background: "#000000" }}>
+                                <img src="/images/arrival-2.svg" alt="" className='w-100 h-100' />
+                                <div className="arrival-1-contents ps-3 position-absolute bottom-0">
+                                    <div className="mb-3">
+                                        <p className='playstation'>Women’s Collections</p>
                                     </div>
-                                </div>
-                                {/* Perfume Card */}
-                                <div className="card text-white bg-dark border-0 rounded overflow-hidden w-50">
-                                    <img
-                                        src="images/arrival-4.svg"
-                                        className="card-img"
-                                        alt="Perfume"
-                                        style={{ objectFit: "cover", height: "100%" }}
-                                    />
-                                    <div className="card-img-overlay d-flex flex-column justify-content-end p-3">
-                                        <h6 className="card-title">Perfume</h6>
-                                        <p className="card-text small">GUCCI INTENSE OUD EDP</p>
-                                        <button
-                                            href="#"
-                                            className="btn btn-sm position-absolute bottom-0 start-0"
-                                        >
-                                            Shop Now
-                                        </button>
+                                    <div className="mb-3">
+                                        <p className='ps5'>Featured woman collections that give you another vibe.</p>
+                                    </div>
+                                    <div className="mb-3">
+                                        <button className='shopnow'>ShopNow</button>
                                     </div>
                                 </div>
                             </div>
+
+                            <div className="lower d-flex position-relative" style={{ height: '48%' }}>
+
+                                <div className="lower-left me-3 p-1 w-50" style={{background: "#000000"}}>
+                                    <img src="/images/arrival-3.svg" alt="" className='w-100 h-100' />
+                                     <div className="arrival-1-contents ps-1 position-absolute bottom-0">
+                                    <div className="mb-3">
+                                        <p className='playstation'>Speakers</p>
+                                    </div>
+                                    <div className="mb-3">
+                                        <p className='ps5'>Amazon wireless speakers</p>
+                                    </div>
+                                    <div className="mb-3">
+                                        <button className='shopnow'>ShopNow</button>
+                                    </div>
+                                </div>
+                                </div>
+
+                                 <div className="lower-right p-1 w-50" style={{background: "#000000"}}>
+                                    <img src="/images/arrival-4.svg" alt="" className='w-100 h-100' />
+                                     <div className="arrival-1-contents ps-1 position-absolute bottom-0">
+                                    <div className="mb-3">
+                                        <p className='playstation'>Perfume</p>
+                                    </div>
+                                    <div className="mb-3">
+                                        <p className='ps5'>GUCCI INTENSE OUD EDP</p>
+                                    </div>
+                                    <div className="mb-3">
+                                        <button className='shopnow'>ShopNow</button>
+                                    </div>
+                                </div>
+                                </div>
+
+                            </div>
+
                         </div>
 
                     </div>
