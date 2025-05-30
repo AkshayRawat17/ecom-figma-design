@@ -24,7 +24,7 @@ export default function Categories() {
                 </div>
 
                 <div className="container mb-5">
-                    <div className="row d-flex gap-5 justify-content-center">
+                    <div className="row d-flex gap-3 justify-content-center">
                         <div className="col-2 col-lg-4 col-md-4 mb-4 d-flex justify-content-center align-items-center border border-dark border-opacity-25 border border-dark border-opacity-25">
                             <div className="phones">
                                 <img src="/images/phone.svg" alt="" className="" />
@@ -45,7 +45,7 @@ export default function Categories() {
                         </div>
                         <div className="col-2 col-lg-4 col-md-4 mb-4 d-flex justify-content-center align-items-center border border-dark border-opacity-25">
                             <div className="phones">
-                                <img src="/images/camera.svg" alt="" className="text-dark" style={{fill: "black !important"}} />
+                                <img src="/images/camera.svg" alt="" className="text-dark" style={{ fill: "black !important" }} />
                                 <p>Camera</p>
                             </div>
                         </div>

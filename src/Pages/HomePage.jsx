@@ -121,7 +121,7 @@ export default function HomePage() {
                 </div>
               </div>
 
-              <a class="btn offcanvas-home-container" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample" target='off'>
+              <a className="btn offcanvas-home-container" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample" target='off'>
 
               </a>
 
@@ -130,16 +130,16 @@ export default function HomePage() {
               </button> */}
 
 
-              <button class="btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling"><span class="material-symbols-outlined">
+              <button className="btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling"><span className="material-symbols-outlined">
                 menu
               </span></button>
 
-              <div class="offcanvas offcanvas-start" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
-                <div class="offcanvas-header">
-                  <h5 class="offcanvas-title" id="offcanvasScrollingLabel">Home Page</h5>
-                  <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+              <div className="offcanvas offcanvas-start" data-bs-scroll="true" data-bs-backdrop="false" tabIndex="-1" id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
+                <div className="offcanvas-header">
+                  <h5 className="offcanvas-title" id="offcanvasScrollingLabel">Home Page</h5>
+                  <button type="button" className="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                 </div>
-                <div class="offcanvas-body">
+                <div className="offcanvas-body">
                   <div className="mb-1 d-flex position-relative">
                     <p className='pe-5 women-fashion'>Women's Fashion</p>
                     <img src="/images/DropDown (1).svg" alt="" className='home-image-1' />
