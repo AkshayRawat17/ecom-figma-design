@@ -1,4 +1,9 @@
 import React from 'react'
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Navigation } from 'swiper/modules';
+
+import 'swiper/css';
+import 'swiper/css/navigation';
 
 export default function Categories() {
     return (
@@ -24,46 +29,60 @@ export default function Categories() {
                 </div>
 
                 <div className="container mb-5">
-                    <div className="row d-flex gap-3 justify-content-center">
-                        <div className="col-2 col-lg-4 col-md-4 mb-4 d-flex justify-content-center align-items-center border border-dark border-opacity-25 border border-dark border-opacity-25">
+                    <Swiper className="row d-flex gap-3 justify-content-center" loop={true}
+                        modules={[Navigation]}
+                        navigation={{
+                            prevEl: '.btn-left',
+                            nextEl: '.btn-right',
+                        }}
+                        spaceBetween={30}
+                        slidesPerView={1}
+                        breakpoints={{
+                            576: { slidesPerView: 1 },
+                            768: { slidesPerView: 2 },
+                            992: { slidesPerView: 3 },
+                            1200: { slidesPerView: 5 }
+                        }}>
+                        <SwiperSlide className="col-2 col-lg-4 col-md-4 mb-4 d-flex justify-content-center align-items-center border border-dark border-opacity-25" style={{ width: "200px !important" }} >
                             <div className="phones">
                                 <img src="/images/phone.svg" alt="" className="" />
                                 <p>Phones</p>
                             </div>
-                        </div>
-                        <div className="col-2 col-lg-4 col-md-4 mb-4 d-flex justify-content-center align-items-center border border-dark border-opacity-25">
+                        </SwiperSlide>
+                        <SwiperSlide className="col-2 col-lg-4 col-md-4 mb-4 d-flex justify-content-center align-items-center border border-dark border-opacity-25">
                             <div className="phones">
                                 <img src="/images/computer.svg" alt="" className="ps-3" />
                                 <p>Computers</p>
                             </div>
-                        </div>
-                        <div className="col-2 col-lg-4 col-md-4 mb-4 d-flex justify-content-center align-items-center border border-dark border-opacity-25">
+                        </SwiperSlide>
+                        <SwiperSlide className="col-2 col-lg-4 col-md-4 mb-4 d-flex justify-content-center align-items-center border border-dark border-opacity-25">
                             <div className="phones">
                                 <img src="/images/smartwatch.svg" alt="" className="ps-3" />
                                 <p>Smartwatch</p>
                             </div>
-                        </div>
-                        <div className="col-2 col-lg-4 col-md-4 mb-4 d-flex justify-content-center align-items-center border border-dark border-opacity-25">
+                        </SwiperSlide>
+                        <SwiperSlide className="col-2 col-lg-4 col-md-4 mb-4 d-flex justify-content-center align-items-center border border-dark border-opacity-25">
                             <div className="phones">
                                 <img src="/images/camera.svg" alt="" className="text-dark" style={{ fill: "black !important" }} />
                                 <p>Camera</p>
                             </div>
-                        </div>
-                        <div className="col-2 col-lg-4 col-md-4 mb-4 d-flex justify-content-center align-items-center border border-dark border-opacity-25">
+                        </SwiperSlide>
+                        <SwiperSlide className="col-2 col-lg-4 col-md-4 mb-4 d-flex justify-content-center align-items-center border border-dark border-opacity-25">
                             <div className="phones">
                                 <img src="/images/headphone.svg" alt="" className="ps-3" />
                                 <p>Headphones</p>
                             </div>
-                        </div>
-                        <div className="col-2 col-lg-4 col-md-4 mb-4 d-flex justify-content-center align-items-center border border-dark border-opacity-25">
+                        </SwiperSlide>
+                        <SwiperSlide className="col-2 col-lg-4 col-md-4 mb-4 d-flex justify-content-center align-items-center border border-dark border-opacity-25">
                             <div className="phones">
                                 <img src="/images/gamepad.svg" alt="" className="" />
                                 <p>Gaming</p>
                             </div>
-                        </div>
-                    </div>
+                        </SwiperSlide>
+                    </Swiper>
                 </div>
             </div>
         </>
     )
 }
+
