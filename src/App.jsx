@@ -10,6 +10,7 @@ import ContactPage from './Pages/ContactPage'
 import AboutPage from './Pages/AboutPage'
 import CheckoutPage from './Pages/CheckoutPage'
 import PrivateRoute from './Pages/PrivateRoutes'
+import ProductDetails from './Pages/ProductDetails'
 
 export default function App() {
   return (
@@ -28,6 +29,7 @@ export default function App() {
           </PrivateRoute>} />
           <Route path='/about' element={<PrivateRoute><AboutPage /></PrivateRoute>} />
           <Route path='/checkout' element={<CheckoutPage />} />
+          <Route path='/product/:id' element={<ProductDetails />} />
         </Routes>
         <Footer />
       </BrowserRouter>

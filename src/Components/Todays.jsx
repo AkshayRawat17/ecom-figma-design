@@ -138,6 +138,7 @@ import { fetchProducts } from '../Redux/Reducer/productSlice';
 
 import 'swiper/css';
 import 'swiper/css/navigation';
+import { Link } from 'react-router-dom';
 
 const renderStars = (rating) => {
     let stars = [];
@@ -224,27 +225,29 @@ export default function Todays() {
 
                             return (
                                 <SwiperSlide className="col-12 col-lg-3 col-md-6 col-sm-12" key={product.id}>
-                                    <div className="card mb-5 border-0">
-                                        <div className="images-container" style={{ maxWidth: '100%' }}>
-                                            <img src={product.image} className="card-img-top p-5" alt={product.title} style={{ height: '180px', objectFit: 'contain' }} />
-                                            <img src="/images/heart.svg" className="heart" alt="heart" />
-                                            <img src="/images/eye.svg" className="eye" alt="eye" />
-                                            <p className="text-container">-{discount}%</p>
-                                        </div>
-                                        <div className="card-body">
-                                            <p className="card-title text-start">{product.title.slice(0, 20)}</p>
-                                            <div className="paragraph d-flex">
-                                                <p className="me-2">${product.price.toFixed(2)}</p>
-                                                <p className="para m-0">${originalPrice}</p>
+                                    <Link to={`product/${product.id}`} className="text-decoration-none text-dark">
+                                        <div className="card mb-5 border-0">
+                                            <div className="images-container" style={{ maxWidth: '100%' }}>
+                                                <img src={product.image} className="card-img-top p-5" alt={product.title} style={{ height: '180px', objectFit: 'contain' }} />
+                                                <img src="/images/heart.svg" className="heart" alt="heart" />
+                                                <img src="/images/eye.svg" className="eye" alt="eye" />
+                                                <p className="text-container">-{discount}%</p>
                                             </div>
-                                            <div className="star-container d-flex">
-                                                <div className="star-images d-flex me-2">
-                                                    {renderStars(product.rating.rate)}
+                                            <div className="card-body">
+                                                <p className="card-title text-start">{product.title.slice(0, 20)}</p>
+                                                <div className="paragraph d-flex">
+                                                    <p className="me-2">${product.price.toFixed(2)}</p>
+                                                    <p className="para m-0">${originalPrice}</p>
                                                 </div>
-                                                <p className="image-para">({product.rating.count})</p>
+                                                <div className="star-container d-flex">
+                                                    <div className="star-images d-flex me-2">
+                                                        {renderStars(product.rating.rate)}
+                                                    </div>
+                                                    <p className="image-para">({product.rating.count})</p>
+                                                </div>
                                             </div>
                                         </div>
-                                    </div>
+                                    </Link>
                                 </SwiperSlide>
                             );
                         })}
